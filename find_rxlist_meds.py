@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+#This script first collects medications found in RxList medication database in alphabetical order.
+#After collecting medications it will check if the collected medication returns a valid search because
+#Rxlist.com store their medication either by their generic name or brand name.
+
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
